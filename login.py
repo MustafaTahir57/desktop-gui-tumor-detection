@@ -16,12 +16,12 @@ def login_fn(loginscreen_image,mainframe,Width,Height):
     #username_entry
     username_entry = Entry(mainframe,justify=LEFT,bd=0,fg='black',bg='white',font=('Lexend','12'))
     username_entry.place(x=Width*0.647,y=Height*0.405,width=Width*0.23,height=Height*0.038)
-    username_entry.insert(0,'ilyas')
+    username_entry.insert(0,'Mustafa')
 
     #password_entry
     password_entry = Entry(mainframe,justify=LEFT,show='*',bd=0,fg='black',bg='white',font=('Lexend','12'))
     password_entry.place(x=Width*0.647,y=Height*0.505,width=Width*0.23,height=Height*0.038)
-    password_entry.insert(0,'ilyas123')
+    password_entry.insert(0,'Mustafa123')
 
     #login_fn
     def login_fn_():
@@ -32,7 +32,7 @@ def login_fn(loginscreen_image,mainframe,Width,Height):
         if (username_entry.get()=="" or password_entry.get() == ""):
             messagebox.showerror("ERROR","Fields Should Not Be Empty !",parent=mainframe)
         else:
-            if username != 'ilyas' or password != 'ilyas123':
+            if username != 'Mustafa' or password != 'Mustafa123':
                 messagebox.showerror("Error","Invalid  Gmail Or Password",parent=mainframe)
             else:
                 messagebox.showinfo("Congrats","Log-in Successful",parent=mainframe)
